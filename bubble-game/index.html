@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="nPk7Y9GD7hKVEmQkhpge1d">
+    <head data-page-node-id="OPu8PrkXYd1mFYbjtin2yr">
+        <meta charset="UTF-8" data-page-node-id="ysARXBEt6INHouIFViSDRn">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" data-page-node-id="xw5dqr3iT7zI6240zzlspX">
+        <title>限时戳泡泡</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="theme-ocean" data-page-node-id="7nVRlEqe0WTXmRAvKKJcXG">
+
+        <!-- 开始页 -->
+        <div id="screen-start" class="screen active" data-page-node-id="VegQ1H03MTYh9Ox7reOLGe">
+            <h1 data-page-node-id="9FI5MFQJVQsIHcqsi2fDzG">限时戳泡泡</h1>
+            <div class="subtitle" data-page-node-id="56prSzygutVrPgVPYXXVwa">戳破泡泡，冲击榜单</div>
+
+            <div class="section-label" data-page-node-id="QAPC5z2tDDmUUozhxQP7aC">选择模式</div>
+            <div class="chip-row" id="mode-row" data-page-node-id="RcrrYmbZPmRUqkwoff2I0A"></div>
+            <div class="mode-desc" id="mode-desc" data-page-node-id="NeExTxYOs6sYyxpoXS4fna"></div>
+
+            <div class="section-label" data-page-node-id="3DO8sTxog6PZTKaBHG3puz">主题皮肤</div>
+            <div class="chip-row" id="theme-row" data-page-node-id="QMrgp63ZnmHKyyvHxVVNaQ"></div>
+
+            <button class="btn" id="btn-start" data-page-node-id="zm7roptED0FlkGWK6w8O98">开始游戏</button>
+            <div class="link-row" data-page-node-id="J0emnjbIYAEKJ6I2ZQHvBH">
+                <button class="btn btn-ghost" id="btn-lb" data-page-node-id="jdTQu0Cu6fSrg4HnhS2lp0">排行榜</button>
+                <button class="btn btn-ghost" id="btn-ach" data-page-node-id="MJ2GYYGC8kHF2wuDI4SbTo">成就</button>
+            </div>
+            <div id="best-score-start" data-page-node-id="gskB4hHP8pV0jfHuzMKQI0"></div>
+            <div id="lb-status" data-page-node-id="X97jMti8GQQlBoSMJeIdKR"></div>
+        </div>
+
+        <!-- 游戏页 -->
+        <div id="screen-game" class="screen" data-page-node-id="5z9GNIneEb54nHx4nKZwMR">
+            <div id="playfield" data-page-node-id="0LDcgGxd43qIk6nrvFhmEe"></div>
+            <div id="hud" data-page-node-id="6YMS0JYXDkaFOjtVsndPkF">
+                <div id="timebar-wrap" data-page-node-id="8zfXj9GeqCBwz9kkZGKQVF"><div id="timebar" data-page-node-id="WVdRXhBwbOwbxHPDEA1QqI"></div></div>
+                <div id="time-num" data-page-node-id="WCeqmjwQxfRBzC73E3Nmnq">30.0 s</div>
+                <div id="mode-badge" data-page-node-id="7nrl5psuQc14Ps9qlJARRO"></div>
+                <div id="score" data-page-node-id="9ByLk8y3m347w49nhVndeT">0</div>
+                <div id="combo-label" data-page-node-id="Sbiu8acCeV7VVCPlF3rvNl"></div>
+                <div id="lives" data-page-node-id="FiapaZqZsmKRJhGjMjHhgp"></div>
+            </div>
+            <div id="combo-burst" data-page-node-id="1pFoIBZGhQJ5KyWH0R7iVZ"></div>
+            <div id="toast" data-page-node-id="BseGBAg4v8kTRsiGTRLiIr"></div>
+        </div>
+
+        <!-- 结算页 -->
+        <div id="screen-result" class="screen" data-page-node-id="90vggwKBz3m8itOwuF8sCR">
+            <h2 id="result-title" data-page-node-id="CdHq0RZ1ZR698TLc1CN7R7">时间到！</h2>
+            <div id="final-score" data-page-node-id="LF5rc9KvKjW2GHfLZ7FJNo">0</div>
+            <div id="result-mode" data-page-node-id="OEwVwXhBjIYzCjLoMCYWWE"></div>
+            <div id="beat-percent" data-page-node-id="9ZjIogKXFeQGetoq2J6wQn"></div>
+            <div id="new-record" data-page-node-id="KUlMxxcWfFYQR85a823vFG"></div>
+            <div id="game-stats" data-page-node-id="uO15yABnMyq5j2TBqBICGZ"></div>
+            <div id="submit-row" data-page-node-id="cxBC5EOm3XEAdtAUYYD9wZ">
+                <input id="nickname-input" maxlength="12" placeholder="输入昵称（最多12字符）" data-page-node-id="uv5EwakCaUdHSnOaExt748">
+                <button class="btn" id="btn-submit" data-page-node-id="z33lrEI0EB2CfIg21Bfgnx">提交分数</button>
+            </div>
+            <div id="submit-msg" data-page-node-id="OH2PIA0ER0T92JYDDJNAit"></div>
+            <button class="btn" id="btn-again" data-page-node-id="NragzHFxKn30Z8ENGf9Bih">再来一局</button>
+            <div class="link-row" data-page-node-id="4oNKWtTsUmz64vgXvJbTxL">
+                <button class="btn btn-ghost" id="btn-result-lb" data-page-node-id="LoSUc7hMoVDM4QlHMWGw9b">排行榜</button>
+                <button class="btn btn-ghost" id="btn-share" data-page-node-id="3UGhScWKloMGTUEWejaxlF">分享成绩</button>
+            </div>
+        </div>
+
+        <!-- 排行榜页 -->
+        <div id="screen-leaderboard" class="screen" data-page-node-id="1fnlNOqJeWiXoOgjq7kyhn">
+            <h2 data-page-node-id="ds3gUtAlz2277yLiCuPyAe">排行榜</h2>
+            <div class="lb-sub" data-page-node-id="OVjE69ikCkseBQxlYsuBFN">前 50 名 · 按分数降序，同分按提交时间先后</div>
+            <div id="lb-tabs" data-page-node-id="RQRCiZQDJkC0Ey3zIfo71q"></div>
+            <div id="lb-list" data-page-node-id="5JFth793PdyJ6vzQZgI6zz"></div>
+            <button class="btn btn-ghost" id="btn-lb-back" data-page-node-id="pcGWNiF1I3kbchaE4j0wOr">返回</button>
+        </div>
+
+        <!-- 成就页 -->
+        <div id="screen-achievements" class="screen" data-page-node-id="XQkMAFAkdNPTNVGh9wEQ6x">
+            <h2 data-page-node-id="j1Vp3AjhDAGPFebEB0vfBy">成就</h2>
+            <div class="lb-sub" data-page-node-id="gWRQXySToaCjKQkJ5kH3ip">达成条件自动解锁，进度自动保存</div>
+            <div id="ach-list" data-page-node-id="OGjae2YxTe5MaaKdZHzl0w"></div>
+            <button class="btn btn-ghost" id="btn-ach-back" data-page-node-id="2DrBm6LHWqJ8nbqRCUGTt8">返回</button>
+        </div>
+
+        <div id="ad-slot" data-page-node-id="lEXa2fqGGaEtQysrzFhZhi">广告位 · 320 × 50</div>
+        <div id="compliance" data-page-node-id="yB9K2BaQCAb8te774wlM74">本游戏为虚拟娱乐，不可提现，不涉及任何金钱交易。</div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
