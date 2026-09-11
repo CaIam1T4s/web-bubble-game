@@ -8,7 +8,7 @@
  *   nickname text not null,
  *   score int not null,
  *   mode text not null default 'classic',
- *   created_at timestamptz not null default now()
+ *   created_at timestamptz not null default now() -- 带时区的时间戳
  * );
  * alter table scores enable row level security;
  * create policy "public read" on scores
@@ -812,7 +812,7 @@ async function submitScore() {
         nickname: nickname,
         score: score,
         mode: currentMode,
-        created_at: Date.now(),
+        created_at: new Date().toISOString(),
     };
 
     $("btn-submit").disabled = true;
