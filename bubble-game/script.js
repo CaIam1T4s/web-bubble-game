@@ -20,9 +20,9 @@
  *    即自动切换为在线排行榜。
  *    留空则使用本地排行榜（仅本设备可见）。
  */
-const SUPABASE_URL = "";
+const SUPABASE_URL = "https://ctjeuulzfajqghdudttx.supabase.co/rest/v1/";
 // 例如 'https://xxxxxxxx.supabase.co'
-const SUPABASE_ANON_KEY = ""; // 例如 'eyJhbGciOi...'
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN0amV1dWx6ZmFqcWdoZHVkdHR4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkxMjU3MjQsImV4cCI6MjEwNDcwMTcyNH0.o29glJ_GJf0-7qRYjefQKiWJCt6J1p6rp00s76xFT_c"; // 例如 'eyJhbGciOi...'
 const ONLINE_ENABLED = !!(SUPABASE_URL && SUPABASE_ANON_KEY);
 
 /* ================= 模式定义 ================= */
